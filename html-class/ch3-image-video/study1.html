@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지 태그</title>
+</head>
+<body>
+    <h1>이미지 태그</h1>
+    <img src="./img/cat_small.jpg" alt="고양이 사진">
+    <br>
+    이미지 태그는 문맥적인 뜻은 없습니다. 단순히 글자처럼 취급된다.
+    <br>
+    <p style="font-size:100px">여기 이 <img style="height:100px" src="./img/cat_small.jpg" alt="고양이 사진">는 치즈 고양이입니다.</p>
+
+    <h1>반응형 이미지 설정</h1>
+    <img
+    src="./img/cat_small.jpg"
+    alt="고양이 사진"
+    srcset="
+    ./img/cat_small.jpg 640w,
+    ./img/cat_mid.jpg 1280w,
+    ./img/cat_big.jpg 1920w
+    "
+    sizes="
+    (max-width:640px) 640px,
+    (max-width:1280px) 1280px,
+    1920px
+    "
+    >
+
+    
+
+</body>
+</html>
