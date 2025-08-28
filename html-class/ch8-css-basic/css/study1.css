@@ -1,0 +1,10 @@
+h1{color:blue;font-size:100px;background-color: green;}
+.a{color:orange;}
+#b{color:gold;}
+p.a{color:red;}
+h1.a{
+    background-color: aqua;
+}
+h1.a.c{
+    color:#fff
+}

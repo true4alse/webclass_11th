@@ -1,0 +1,28 @@
+*{margin:0;padding: 0;}
+.a{width:200px;border:10px solid #000;}
+.b{width:300px;border:10px solid pink;padding:20px;}
+.c{width:400px;box-sizing: border-box;padding:30px;border:10px solid red;}
+
+.d{width:500px;border:20px solid blue;padding:10px;box-sizing: border-box;}
+.d h1{border:20px solid red;}
+.e{border:10px solid green;width:300px;padding-left:20px;}
+
+.g{width:200px;height:200px;padding:10px 20px;border:10px solid red;}
+.h{width:300px;height:300px;padding:10px 20px 30px;border-bottom:10px solid blue;}
+.i{width:300px;border:10px solid green;margin-top:30px;padding:10px 20px 30px 40px;}
+.i h1{padding:20px;}
+
+.j{width:300px;padding:10px 30px 40px 20px;border:10px solid #000;}
+.k{border:10px solid blue;padding:10px 20px;}
+.k h1{border:10px solid red;width:100px;height:100px;}
+.k h2{border:10px solid green;width:100px;height:100px;margin-top:20px;}
+
+.l{border:10px solid red;padding:10px 20px;border-right:1px solid blue;width:300px;}
+.m{width:500px;border:20px solid #000;}
+.m h1{margin:0 20px;border:10px solid red;}
+
+.n{border:10px solid red;padding:10px 20px;width:500px;box-sizing: border-box;}
+.n h1{border:10px solid blue;padding:10px;margin-bottom:10px;height:50px;}
+.n ul{border:10px solid orange;}
+.n ul li{border-bottom:1px solid green;padding:5px 0;height:30px;}
+.n ul li:nth-of-type(2){height:60px;border-bottom:5px solid green;}

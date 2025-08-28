@@ -1,0 +1,16 @@
+div h2#a.a.b{color:red;}
+h2#a.a.b{color:blue;}
+h2#a.a{color:green;}
+h2#a{color:blue;}
+#a{color:red;}
+div.box h2.a.b{color:green;}
+div.box h2.a{color:blue;}
+div.box .a{color:red;}
+.box .a{color:green;}
+div .a{color:blue;}
+.a{color:green;}
+div h2{color:red;}
+div>h2{color:blue;}
+h2{color:red;}
+h2{color:blue;color:green;}
+h2{color: red !important;}

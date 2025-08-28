@@ -1,0 +1,19 @@
+h1{
+    border:1px solid red;
+    width:300px;
+    display:inline;    
+}
+p{border:1px solid red;}
+blockquote{border:1px solid red;}
+div{border:1px solid red;}
+strong{border:1px solid red;}
+em{
+    border:1px solid red;
+    display: block;
+    width:300px;
+}
+a{
+    border:1px solid red;
+    width:300px;
+    display: inline-block;
+}

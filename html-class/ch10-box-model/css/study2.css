@@ -1,0 +1,25 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+.box{
+    border:1px solid red;
+    width:500px;
+    height:auto;
+    padding-left:100px;
+    padding-right:50px;
+    margin-left:50px;
+}
+.box h1{
+    border:1px solid blue;
+    /* width:auto; -> 500px */
+    /* width:400px; */
+}
+
+.frame{
+    border:10px solid black;
+    width:300px;
+    padding:30px;
+}
+.a{box-sizing: content-box;}
+.b{box-sizing: border-box;}
