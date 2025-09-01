@@ -1,0 +1,48 @@
+.a{
+    border:1px solid red;
+    background-color: aqua;
+    height:1500px;
+    background-image:url("../img/rabbit.jpg");
+    background-repeat: no-repeat;
+    /* background-position: calc(100% - 100px) 100px; */
+    /* background-position: 100px calc((100% - 100px)); */
+    /* background-size: auto 500px; */
+    background-size: calc(100% - 100px) auto;
+}
+.b{
+    border:1px solid blue;
+    height:800px;
+    background: pink url("../img/rabbit.jpg") no-repeat 50% 50% / auto 100%;
+    background-size: contain;
+    background-attachment: fixed;
+}
+.c{
+    border:1px solid green;
+    height:800px;
+    background: aqua url("../img/rabbit.jpg") no-repeat 50% 50% / contain;
+    background-blend-mode: multiply;
+}
+.d{
+    border:1px solid coral;
+    height:1600px;
+    background:             
+    url("../img/rabbit.jpg") no-repeat 0 0 / 300px auto,
+    url("../img/rabbit.jpg") no-repeat 100% 0 / auto 400px,
+    url("../img/rabbit.jpg") no-repeat 100% 100% / contain;
+}
+.e{
+    border:1px solid orange;
+    height:800px;
+    background:
+    url("../img/rabbit.jpg") no-repeat 50% 50% / contain,
+    linear-gradient(30deg,red 20%,blue 80%);
+}
+.box{
+    width:400px;
+    background-color: rgba(255, 255, 255, 0.602);
+    margin:0 auto;
+    margin-top:150px;
+    padding:100px;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
