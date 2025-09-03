@@ -75,9 +75,13 @@ html{
 .wrap h1{
     text-align: center;
     padding:20px 0;
+    font-size: 50px;
+    font-weight: 900;
+    text-transform: uppercase;
 }
 .wrap p{
     text-align: center;
+    line-height: 140%;
 }
 .banner{
     height:441px;
@@ -88,6 +92,9 @@ html{
     text-align: center;
     padding:10px 0;
     margin-bottom: 20px;
+    font-size:30px;
+    font-weight: 700;
+    line-height: 1;
 }
 .value{
     text-align: center;
