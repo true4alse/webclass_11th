@@ -1,0 +1,57 @@
+*{margin:0;padding:0;}
+html{
+    font-size:20px;
+    font-family: 'Pretendard';
+}
+.banner{
+    height:599px;
+    background:url("../img/makingbread.png") no-repeat 50% 50% / cover;
+    box-sizing: border-box;
+    padding-top: 270px;
+}
+.banner h1{
+    width:1440px;
+    margin:0 auto;
+    text-align: center;
+    color:#fff;
+    text-transform: uppercase;
+    font-size: 50px;
+    line-height: 100%;
+    font-weight: 400;
+}
+img{max-width: 100%;}
+.abo{font-family: "Aboreto", system-ui;}
+.container{
+    width:1600px;
+    margin:0 auto;
+    padding-top: 120px;
+}
+.container h2{
+    font-size:120px;
+    line-height: 0.9;
+    font-weight: 400;
+    margin-bottom: 88px;
+}
+.container h2+p{
+    border-top:1px solid #000;
+    text-align: right;
+    padding:20px 0;
+    margin-bottom: 66px;
+    text-transform: uppercase;
+}
+.container figure{
+    width:1000px;
+    height:432px;
+}
+.container figure img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.b{
+    width:1000px;
+    margin-top: 27px;;
+}
+.b span{
+    font-weight: 800;
+}
