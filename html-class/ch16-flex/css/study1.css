@@ -1,0 +1,14 @@
+*{margin:0;padding:0;}
+.box{
+    border:10px solid red;
+    display: flex;
+    width:500px;
+    height:500px;
+    flex-direction: column;
+    gap:20px;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.box section{
+    border:5px solid blue;
+}
