@@ -1,0 +1,15 @@
+*{margin:0;padding:0;}
+.box{
+    border:10px solid red;
+    display: flex;
+    width:800px;
+    margin:0 auto;
+}
+section{
+    flex-basis:100px;
+    flex-grow:1;
+}
+.a{background:orange;flex-grow: 2;}
+.b{background: blue;}
+.c{background: green;}
+.d{background: pink;}

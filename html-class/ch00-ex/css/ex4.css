@@ -1,0 +1,65 @@
+html{
+    font-size:20px;
+    font-family: 'Pretendard';
+    font-weight: 400;
+}
+body{
+    background: url("../img/curvebg.svg") no-repeat 100% 0% / cover;
+}
+.banner{
+    width:1600px;
+    height:599px;
+    margin:110px auto;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../img/bbg.jpg") no-repeat 50% 50% / cover;
+}
+.pointFont{
+    font-family: "Aboreto", system-ui;
+}
+.banner h1{
+    width:1440px;
+    text-align: center;
+    color:#fff;
+    text-transform: uppercase;
+    font-size:50px;
+    line-height: 1;
+}
+.wrap{
+    width:1600px;
+    margin:0 auto;
+}
+.wrap h2{
+    font-size:150px;
+    line-height: 0.9;
+    margin-bottom: 20px;
+}
+.coffee-img1{
+    margin-top: 75px;
+    margin-bottom: 50px;
+    display: flex;
+    gap:20px;
+    height:434px;
+}
+.coffee-img1 div{
+    flex:1;
+}
+
+.coffee-img1 div img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.wrap h3{
+    font-size:40px;
+    line-height: 1.4;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.wrap h3+p{
+    text-align: center;
+    margin-bottom: 60px;
+}
