@@ -30,3 +30,51 @@
 .box5{height:300px;display: flex;flex-direction: row-reverse;align-items: flex-end;justify-content: space-between;}
 .box5 div{width:100px;height:100px;}
 
+.box6{
+    display: flex;
+    flex-wrap: wrap;
+}
+.box6 div{
+    height:100px;
+    width:50%;
+}
+
+.box7{
+    display: flex;
+    justify-content: space-between;
+}
+/* .box7>section{border:5px solid lime;} */
+.box7 div{
+    width:100px;
+    height:100px;
+}
+
+.box8{
+    display: flex;
+    justify-content: space-between;
+    height:300px;
+}
+.box8>section{
+    border:1px solid lime;
+    display: flex;
+}
+.box8 div{
+    width:100px;
+    height:100px;
+}
+.box8-2{
+    flex-direction: row-reverse;
+}
+
+.box9{
+    display: flex;
+    height:300px;
+}
+.box9>div{flex:1;}
+.box9>div>div{height:100px;}
+
+.box10{display: flex;height:300px;}
+.box10>div{flex:1;}
+.box10 .c{height:100px;}
+.box10cb{display: flex;height:200px;}
+.box10cb>div{flex:1;}

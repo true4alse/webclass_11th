@@ -1,0 +1,82 @@
+html{
+    font-size:20px;
+    /* 1rem=20px */
+    font-family: 'Pretendard';
+    font-weight: 400;
+}
+.common-frame{
+    width:1600px;
+    margin:0 auto;
+}
+.pf{font-family: "Aboreto", system-ui;}
+.c1 h1{
+    padding-top: 8rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size:2.5rem;
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+.c1 p{
+    line-height: 140%;
+    text-align: center;
+    text-transform: uppercase;
+}
+.banner{
+    margin:0 auto;
+    max-width: 3000px;
+    height:700px;
+    margin-top: 4.65rem;
+    margin-bottom: 4.6rem;
+    background: url("../img/sgmhero.jpg") no-repeat 50% 50% / cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.banner h2{
+    width:1600px;
+    font-size: 7.5rem;
+    line-height: 90%;
+    text-transform: uppercase;
+    color:#fff;
+}
+.c2 h3{
+    text-align: center;
+    font-size:2rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+}
+.c2>p{
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+.list-products{
+    display: flex;
+    gap:1rem;
+}
+.list-products>li{
+    flex:1;
+}
+.list-products li figure{
+    line-height: 0;
+    aspect-ratio: 1/1;
+}
+.list-products li figure img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.list-products h4{
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+    font-weight: 700;
+}
+.list-products p{
+    display: -webkit-box;          /* 플렉스형 박스(옛 사양) */
+    -webkit-box-orient: vertical;  /* 세로 방향 줄바꿈 기준 */
+    -webkit-line-clamp: 2;         /* 보여줄 최대 줄 수 */
+    overflow: hidden;              /* 넘치는 내용 숨기기 */
+    text-overflow: ellipsis;       /* 말줄임 표기(보조) */
+}
