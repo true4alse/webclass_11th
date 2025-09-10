@@ -1,0 +1,50 @@
+html{
+    font-size:20px;
+    font-family: 'Pretendard';
+    font-weight: 400;
+}
+header{
+    border-bottom:2px solid #BE0707;
+    height:100px;
+}
+header .common-frame{
+    width:1600px;
+    margin:0 auto;
+    height:100%;
+    display: flex;
+    justify-content: space-between;
+}
+.gnb{
+    display: flex;
+    width:966px;
+    height:100px;
+}
+.gnb>li{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+}
+.banner{
+    height:700px;
+    background: url("../img/bgincafeho.jpg") no-repeat 50% 50% / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    text-transform: uppercase;
+
+    font-family: Aboreto;
+    font-weight: 400;
+    font-size: 140px;
+    line-height: 100%;
+    text-align: center;
+
+}
+.banner h1{
+    width:1600px;
+}
