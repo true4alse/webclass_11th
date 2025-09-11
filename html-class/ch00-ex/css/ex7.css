@@ -1,0 +1,118 @@
+html{
+    font-size:20px;
+    font-family: 'Pretendard';
+    font-weight: 400;
+}
+header{
+    height:100px;
+    width:auto;
+    border-bottom:2px solid #BE0707;
+    position: fixed;
+    width:100%;
+    left:0;
+    top:0;
+    color:#fff;
+    z-index: 10000;
+}
+header .common-frame{
+    width:1600px;
+    height:100px;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+nav{
+    width:966px;
+    height:100px;
+}
+.lnb{
+    display: flex;
+    justify-content: flex-end;
+    height:30px;
+    gap:20px;
+}
+.lnb>li{
+    font-family: Pretendard;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lnb>li>a{
+    display: flex;
+    width:100%;
+    height:100%;
+    justify-content: center;
+    align-items: center;
+}
+.gnb{
+    height:70px;
+    display: flex;
+}
+.gnb>li{
+    /* flex-basis: 0%;
+    flex-grow: 1;
+    flex-shrink: 1; */
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gnb>li>a{
+    display: flex;
+    width:100%;
+    height:100%;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+}
+.hero-banner{
+    width:auto;
+    height:100vh;
+    background: url("../img/ex7herobanner.jpg") no-repeat 50% 50% / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-banner h1{
+    width:1600px;
+    
+    font-size: 140px;
+    line-height: 90%;
+    text-transform: uppercase;
+    color:#fff;
+}
+.container{
+    width:1600px;
+    margin:0 auto;
+    margin-top: 120px;;
+}
+.container h2{
+    font-style: Regular;
+    font-size: 60px;
+    line-height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.container h2+p{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 80px;
+}
+.banner{
+    height:441px;
+}
+.banner img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
