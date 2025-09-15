@@ -1,0 +1,68 @@
+html{
+    font-size: 20px;
+    font-family: 'Pretendard',sans-serif;
+    font-weight: 400;
+}
+header{
+    height:100px;
+    overflow: hidden;
+    transition:all 300ms ease-out 0s;
+    position: fixed;
+    width:100%;
+    left:0;
+    top:0;
+    background-color: #fff;
+}
+header:hover{
+    height:266px;
+}
+.inner-header{
+    width:1600px;
+    margin:0 auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.logo{
+}
+.gnb{
+    display: flex;
+    gap: 66px;
+}
+.gnb>li{
+}
+.gnb>li>a{
+    display: flex;
+    height:100px;
+    align-items: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+.gnb ul{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    font-size: 16px;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+.banner{
+    height:800px;
+    background: url("../img/bg-ex8.jpg") no-repeat 50% 50% / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.banner h1{
+    width:1600px;
+    color:#fff;
+    text-align: center;
+    font-size: 140px;
+    line-height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+}

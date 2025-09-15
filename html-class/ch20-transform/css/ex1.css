@@ -1,0 +1,15 @@
+*{margin:0;padding:0;}
+.banner{
+    height:600px;
+    background-color: pink;
+    position: relative;
+}
+.banner h1{
+    border:1px solid red;
+    font-size:80px;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform:translateX(-50%)translateY(-50%);
+    transform: translate(-50%,-50%);
+}

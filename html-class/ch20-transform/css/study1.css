@@ -1,0 +1,47 @@
+.box{
+    border:1px solid #000;
+    width:300px;
+    height:300px;
+    margin:200px auto;
+    transition:all 1s ease 0s;
+}
+
+.a{background-color: red;}
+.a:hover{transform:translateX(-50%);}
+
+.b{background-color: blue;}
+.b:hover{transform:translateY(-50%);}
+.c{background-color: orange;}
+.c:hover{
+    transform:
+    translateY(-100px)
+    translateX(100px);
+}
+.parent{
+    min-height:700px;
+    background-color: #ddd;
+    perspective: 1000px;
+    /*원근감 설정*/
+    perspective-origin: 50% 50%;
+}
+.d{background-color: green;}
+.parent:hover .d{transform:translateZ(500px);}
+.e{
+    background-color: coral;
+    transform-origin: 0% 50%;
+}
+.e:hover{transform:rotate(-30deg);}
+.f{background-color: darkgoldenrod;}
+.f:hover{transform:rotateX(180deg);}
+.g{background-color: salmon;}
+.g:hover{transform:rotateY(180deg);}
+.h{background-color: darkcyan;}
+.h:hover{transform:scaleX(200%);}
+.i{background-color: chocolate;}
+.i:hover{transform:scaleY(2);}
+.j{background-color: hotpink;}
+.j:hover{transform: scale(0.7);}
+.k{background-color: gold;}
+.k:hover{transform: skewX(30deg);}
+.l{background-color: violet;}
+.l:hover{transform:skewY(-30deg);}
