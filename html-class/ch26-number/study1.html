@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>숫자데이터 - number</title>
+</head>
+<body>
+    <h1>숫자데이터 - number</h1>
+    <script>
+        console.log(100+10)
+        console.log(100+10*2)
+        console.log((100+10)*2)
+        console.log(100/5)
+        console.log(100-10)
+        console.log(100%3)
+        "123"
+        100
+        console.log(100+"100") // "100100"
+        console.log("정현진"+30) // "정현진30"
+    </script>
+    <h1>typeof()</h1>
+    <p>괄호안에 데이터의 형태를 검사하고 그 결과를 문자데이터형태로 함수가 사용된 자리에 남기는 함수</p>
+    <script>
+        console.log(typeof(100))
+        console.log(typeof('100'))
+        console.log(typeof(typeof(100)))
+        console.log((typeof(typeof(100))).length)
+        console.log((typeof((typeof(100))[2])).length)
+    </script>
+    <h1>String()</h1>
+    <p>숫자데이터를 문자데이터로 바꿔주는 함수</p>
+    <script>
+        console.log(String(100)+200)
+    </script>
+    <h1>Number()</h1>
+    <p>문자데이터를 숫자데이터로 바꿔주는 함수</p>
+    <script>
+        console.log(Number("200")+100)
+    </script>
+
+    <h1>prompt()</h1>
+    <p>홈페이지의 사용자에게 괄호안의 질문을 한 후 사용자가 입력한 대답을 (prompt함수가 실행되었던 자리에)문자데이터 형태로 남겨주는 함수</p>
+<script>
+
+document.write("<h3>"+prompt("당신의 이름이 무엇인가요?")+"님 안녕하세요!</h3>")
+</script>
+    
+</body>
+</html>

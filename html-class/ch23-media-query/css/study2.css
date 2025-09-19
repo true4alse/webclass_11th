@@ -1,0 +1,41 @@
+h1{
+    font-size:5rem;
+    margin-bottom: var(--space-2x-large);
+}
+:root{
+    /* 1rem 기준 수치 */
+    --size-base-wide:24px;
+    --size-base-pc:20px;
+    --size-base-tab:18px;
+    --size-base-mobile:14px;
+    /* 여백 */
+    --space-2x-small:0.25rem;
+    --space-x-small:0.5rem;
+    --space-normal:1rem;
+    --space-x-large:2rem;
+    --space-2x-large:3rem;
+    --space-3x-large:4rem;
+    --space-4x-large:5rem;
+    --space-5x-large:6rem;
+}
+
+@media (min-width:1921px){
+    /* 와이드 모니터 */
+    .container{background-color: red;}
+    html{font-size: var(--font-base-wide);}
+}
+@media (max-width:1920px){
+    /* 일반 데스크톱 */
+    .container{background-color: blue;}
+    html{font-size: var(--size-base-pc);}
+}
+@media (max-width:1024px){
+    /* 탭 패드 */
+    .container{background-color: green;}
+    html{font-size: var(--size-base-tab);}
+}
+@media (max-width:768px){
+    /* 모바일 */
+    .container{background-color: gold;}
+    html{font-size: var(--size-base-mobile);}
+}

@@ -1,81 +1,33 @@
-@font-face {
-    font-family: 'Pretendard';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Thin.woff') format('woff');
-    font-weight: 100;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Pretendard';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraLight.woff') format('woff');
-    font-weight: 200;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Pretendard';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff') format('woff');
-    font-weight: 300;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Pretendard';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 400;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Pretendard';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
-    font-weight: 500;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Pretendard';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff') format('woff');
-    font-weight: 600;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Pretendard';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
-    font-weight: 700;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Pretendard';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff') format('woff');
-    font-weight: 800;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Pretendard';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Black.woff') format('woff');
-    font-weight: 900;
-    font-display: swap;
-}
-
 *{margin:0;padding:0;}
 ul{list-style: none;}
+
+:root{
+    --base-size-wide:22px;
+    --base-size-pc:20px;
+    --base-size-tab:18px;
+    --base-size-mobile:14px;
+}
+
+
+@media (min-width:1921px){
+    html{
+        font-family: 'Pretendard',sans-serif;
+        font-size:var(--base-size-wide);
+    }
+}
 html{
-    font-family: 'Pretendard';
-    font-size: 20px;
+    font-family: 'Pretendard',sans-serif;
+    font-size: var(--base-size-pc);
 }
 .wrap{
     width:1440px;
     margin:0 auto;
-    padding-top: 75px;
+    padding-top: 3.75rem;
 }
 .wrap h1{
     text-align: center;
-    padding:20px 0;
-    font-size: 50px;
+    padding:1rem 0;
+    font-size: 2.5rem;
     font-weight: 900;
     text-transform: uppercase;
 }
@@ -86,13 +38,13 @@ html{
 .banner{
     height:441px;
     background: url("../img/cafe.jpg") no-repeat 50% 50% / cover;
-    margin:100px 0;
+    margin:5rem 0;
 }
 .wrap h2{
     text-align: center;
-    padding:10px 0;
-    margin-bottom: 20px;
-    font-size:30px;
+    padding:.5rem 0;
+    margin-bottom: 1rem;
+    font-size:1.5rem;
     font-weight: 700;
     line-height: 1;
 }
@@ -100,8 +52,27 @@ html{
     text-align: center;
 }
 .value li{
-    margin-bottom: 10px;
+    margin-bottom: .5rem;
 }
 .value li:last-of-type{
     margin-bottom: 0;
+}
+@media (max-width:1024px){
+    .pc-only{display: none;}
+    html{
+        font-size:var(--base-size-tab);
+    }
+    .wrap{
+        width:auto;
+        margin:0 2rem;
+    }
+}
+@media (max-width:768px){
+    html{
+        font-size:var(--base-size-mobile);
+    }
+    .wrap{
+        margin:0 1rem;
+    }
+
 }

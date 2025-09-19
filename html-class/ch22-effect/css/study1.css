@@ -1,0 +1,65 @@
+.box1{
+    border:1px solid #000;
+    width:200px;
+    height:200px;
+    box-shadow: 10px 30px 10px blue;
+}
+
+.box2{
+    border:1px solid #000;
+    width:200px;
+    height:200px;
+    margin-top: 100px;
+    box-shadow: 
+    20px 20px 0px red,
+    -20px -20px 0 blue,
+    40px 40px 0 green;
+}
+.box3{
+    border:1px solid #000;
+    margin:100px auto;
+    width:200px;
+    height:200px;
+    transition:all 1s ease 0s;
+}
+.box3:hover{
+    box-shadow: 10px 10px 20px red;
+}
+.filter1 img{
+    filter: grayscale(0);
+    transition: all 1s ease 0s;
+}
+.filter1 img:hover{
+    filter: grayscale(1);
+}
+.filter2 img{
+    transition: all 1s ease 0s;
+}
+.filter2 img:hover{
+    filter: brightness(0.3);
+}
+.filter3 img{
+    transition: all 1s ease 0s;
+}
+.filter3 img:hover{
+    filter: blur(20px);
+}
+.filter4 img{
+    transition: all 1s ease 0s;
+}
+.filter4 img:hover{
+    filter:hue-rotate(180deg);
+}
+
+.bg{
+    background: linear-gradient(30deg,gold,green);
+}
+.blend1 img{
+    mix-blend-mode: color-burn;
+}
+.blend2 img{
+    mix-blend-mode: difference;
+}
+.blend3 img{
+    mix-blend-mode: overlay;
+}
