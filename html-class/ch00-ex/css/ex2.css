@@ -1,21 +1,26 @@
-*{margin:0;padding:0;}
+:root{
+    --base-size-wide:22px;
+    --base-size-pc:20px;
+    --base-size-tab:18px;
+    --base-size-mobile:14px;
+}
+
 html{
-    font-size:20px;
+    font-size:var(--base-size-pc);
     font-family: 'Pretendard';
 }
 .banner{
     height:599px;
     background:url("../img/makingbread.png") no-repeat 50% 50% / cover;
-    box-sizing: border-box;
-    padding-top: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .banner h1{
-    width:1440px;
-    margin:0 auto;
     text-align: center;
     color:#fff;
     text-transform: uppercase;
-    font-size: 50px;
+    font-size: 2.5rem;
     line-height: 100%;
     font-weight: 400;
 }
@@ -24,19 +29,19 @@ img{max-width: 100%;}
 .container{
     width:1600px;
     margin:0 auto;
-    padding-top: 120px;
+    padding-top: 6rem;
 }
 .container h2{
-    font-size:120px;
+    font-size:6rem;
     line-height: 0.9;
     font-weight: 400;
-    margin-bottom: 88px;
+    margin-bottom: 4.4rem;
 }
 .container h2+p{
     border-top:1px solid #000;
     text-align: right;
-    padding:20px 0;
-    margin-bottom: 66px;
+    padding:1rem 0;
+    margin-bottom: 3.3rem;
     text-transform: uppercase;
 }
 .container figure{
@@ -50,8 +55,43 @@ img{max-width: 100%;}
 }
 .b{
     width:1000px;
-    margin-top: 27px;;
+    margin-top: 1.35rem;
 }
 .b span{
     font-weight: 800;
+}
+@media (max-width:1024px){
+    html{
+        font-size:var(--base-size-tab);
+    }
+    .container{
+        width:auto;
+        margin:0 2rem;
+    }
+    .container h2{
+        font-size: 3.33rem;
+    }
+    .container figure{
+        width:auto;
+        height:350px;
+    }
+    .b{
+        width:auto;
+    }
+}
+@media (max-width:768px){
+    html{
+        font-size: var(--base-size-mobile);
+    }
+    .container{
+        width:auto;
+        margin:0 1rem;
+    }
+    .container h2{
+        font-size: 40px;
+    }
+    .container figure{
+        height:200px;
+    }
+
 }
