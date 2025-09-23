@@ -1,0 +1,10 @@
+table{
+    border-collapse: collapse;
+    border-top: 5px solid rgb(36, 181, 120);
+}
+td{min-width: 100px;padding:10px;
+border:1px solid rgb(36, 181, 120);
+border-right: none;}
+th{padding: 20px 30px;background-color: rgb(36, 181, 120);color:#fff;
+border:1px solid rgb(36, 181, 120);}
+caption{margin-bottom: 20px;font-weight: 700;font-size: 40px;}

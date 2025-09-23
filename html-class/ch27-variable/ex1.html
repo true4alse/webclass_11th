@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>예제</title>
+    <link rel="stylesheet" href="./css/ex1.css">
+</head>
+<body>
+    <script>
+        let userName = prompt("당신의 이름을 입력해주세요")
+        let scoreKo = Number(prompt("국어성적 입력"))
+        let scoreEn = Number(prompt("영어성적 입력"))
+        let scoreMa = Number(prompt("수학성적 입력"))
+        let scoreSi = Number(prompt("사회성적 입력"))
+        let scoreSum = scoreKo+scoreEn+scoreMa+scoreSi
+        let scoreAver = (scoreSum/4).toFixed(2)
+        document.write(`
+    <table>
+        <caption>${userName}님의 성적표</caption>
+        <tr>
+            <th>이름</th>
+            <td>${userName}</td>
+            <th>학년</th>
+            <td>2</td>
+            <th>반</th>
+            <td>4</td>
+        </tr>
+        <tr>
+            <th>국어</th>
+            <td colspan="5">`+scoreKo+`</td>
+        </tr>
+        <tr>
+            <th>영어</th>
+            <td colspan="5">`+scoreEn+`</td>
+        </tr>
+        <tr>
+            <th>수학</th>
+            <td colspan="5">`+scoreMa+`</td>
+        </tr>
+        <tr>
+            <th>사회</th>
+            <td colspan="5">`+scoreSi+`</td>
+        </tr>
+        <tr>
+            <th>합계</th>
+            <td colspan="2">`+scoreSum+`</td>
+            <th>평균</th>
+            <td colspan="2">`+scoreAver+`</td>
+        </tr>
+    </table>        
+        
+        `)
+    </script>
+</body>
+</html>
