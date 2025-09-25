@@ -1,0 +1,43 @@
+@media (max-width:768px){
+    html{
+        font-size:var(--base-size-mobile);
+    }
+    .wrap h2 {
+        font-size: 50px;
+        line-height: 0.9;
+        text-align: center;
+        padding-top: 10rem;
+        background: url(../img/deco.svg) no-repeat 50% -99%;
+        margin-bottom: 2rem;
+    }
+    .wrap {
+        width: auto;
+        margin: 0 1rem;
+        /* border: 1px solid red; */
+        /* background: red; */
+    }
+    .photo {
+        display: flex;
+        height: auto;
+        gap: 1rem;
+        margin-bottom: 2.5rem;
+        flex-direction: column;
+    }
+    .photo img {
+        width: 100%;
+        /* height: 50%; */
+        object-fit: cover;
+        border-radius: 20px;
+        aspect-ratio: 365/200;
+    }
+}
+@media (max-width:300px){
+    .wrap h2 {
+        font-size: 40px;
+        line-height: 0.9;
+        text-align: center;
+        padding-top: 10rem;
+        background: url(../img/deco.svg) no-repeat 50% -99%;
+        margin-bottom: 2rem;
+    }
+}

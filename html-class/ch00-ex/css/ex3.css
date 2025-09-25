@@ -1,6 +1,12 @@
 *{margin:0;padding:0;}
+:root{
+    --base-size-wide:22px;
+    --base-size-pc:20px;
+    --base-size-tab:18px;
+    --base-size-mobile:14px;
+}
 html{
-    font-size:20px;
+    font-size:var(--base-size-pc);
     font-family: 'Pretendard';
 }
 img{max-width: 100%;}
@@ -17,7 +23,7 @@ img{max-width: 100%;}
 .banner h1{
     width:1440px;
     text-align: center;
-    font-size: 50px;
+    font-size: 2.5rem;
     color:#fff;
     line-height: 1;
     
@@ -30,15 +36,15 @@ img{max-width: 100%;}
     font-size:150px;
     line-height: 0.9;
     text-align: center;
-    padding-top: 200px;
+    padding-top: 10rem;
     background: url("../img/deco.svg") no-repeat 50% 0%;
-    margin-bottom: 40px;
+    margin-bottom: 2rem;
 }
 .p1{
     text-align: center;
     line-height: 1.4;
     text-transform: uppercase;
-    margin-bottom: 100px;
+    margin-bottom: 5rem;
 }
 .p1 span{
     color: #770000;
@@ -46,28 +52,33 @@ img{max-width: 100%;}
 .photo{
     display: flex;
     height:434px;
-    gap:20px;
-    margin-bottom: 50px;
+    gap:1rem;
+    margin-bottom: 2.5rem;
 }
-.photo img{
-    width:50%;
-    height:100%;
+.photo > div{
+    flex:1;
+}
+.photo img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     border-radius: 20px;
 }
 .wrap h3{
-    font-size:40px;
+    font-size:2rem;
     line-height: 1.4;
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
 }
 .wrap h3 span{
     color:#770000;
 }
 .wrap h3+p{
-    margin-bottom: 10px;
+    margin-bottom: .5rem;
 }
 body{
     background: url("../img/bg.png") repeat-x 50% 924px;
 }
+
+
 
 

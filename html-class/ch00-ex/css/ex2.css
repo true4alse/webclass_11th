@@ -60,7 +60,7 @@ img{max-width: 100%;}
 .b span{
     font-weight: 800;
 }
-@media (max-width:1024px){
+@media (max-width:1600px){
     html{
         font-size:var(--base-size-tab);
     }
