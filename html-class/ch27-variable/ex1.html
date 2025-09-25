@@ -15,6 +15,7 @@
         let scoreSi = Number(prompt("사회성적 입력"))
         let scoreSum = scoreKo+scoreEn+scoreMa+scoreSi
         let scoreAver = (scoreSum/4).toFixed(2)
+        let scoreGrade = scoreAver>=90?"A":scoreAver>=80?"B":scoreAver>=70?"C":"D"
         document.write(`
     <table>
         <caption>${userName}님의 성적표</caption>
@@ -47,6 +48,10 @@
             <td colspan="2">`+scoreSum+`</td>
             <th>평균</th>
             <td colspan="2">`+scoreAver+`</td>
+        </tr>
+        <tr>
+            <th>등급</th>
+            <td colspan="5">${scoreGrade}등급</td>
         </tr>
     </table>        
         

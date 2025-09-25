@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>삼항연산자</title>
+</head>
+<body>
+    <h1>삼항연산자</h1>
+    <p>조건?A:B</p>
+    <p>조건이 true이면 A가 남고 false면 B가 남는다.</p>
+    <script>
+        console.log(5>3?"가":"나")
+        console.log(5<3?"가":"나")
+        console.log(10!=10?"다":"라")
+        console.log(20?"a":"b")
+        console.log(!0?"c":"d")
+        let d = "abc"
+        console.log(d?"e":"f")
+        let e = 0
+        console.log(!e?"g":"h")
+        console.log(30<20?"A":5==5?"C":"D")
+
+        let score = 40
+        console.log(score>=90?"A":score>=80?"B":score>=70?"C":"D")
+
+    </script>
+</body>
+</html>

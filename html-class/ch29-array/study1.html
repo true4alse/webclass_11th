@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열 데이터 형태 - array</title>
+</head>
+<body>
+    <h1>배열 - array</h1>
+    <p>연관된 데이터들을 모아놓은 집합</p>
+    <p>배열은 ,(콤마)로 구분하여 원소를 여러개 입력할 수 있다.</p>
+    <script>
+        let a = [1,2,3,4,5]
+        console.log(a[0])
+        console.log(a[2])
+        let b = [
+            1,
+            2,
+            3,
+            4
+        ][3]
+        console.log(b)
+        let c = [
+            "유승진",
+            "박진솔",
+            "임은경",
+            "이지하",
+            "김서진"
+        ]
+        console.log(c[0])
+        console.log(c[4])
+        console.log(c[1].length)
+        console.log(c[2][1]+c[3][2])
+        console.log((!c[3]||!c[4]||c[1])[0])
+
+        let d = [
+            "정현진",
+            "남자",
+            "infp",
+            45,
+            false,
+            [
+                "게임",
+                "운동",
+                "청소"
+            ]
+        ]
+        console.log(d[4]?"기혼":"미혼")
+        d[5][0]
+        d[5][2][0]
+        // "정현진".length // 문자열데이터
+
+        let e = [100,200,300]
+        console.log(e.length)
+        let g = [
+            ["정현진",45,["청소","운동"]],
+            ["박진솔",27,["산책","노래듣기"]],
+            ["유승진",27,["게임","운동","산책"]]
+        ]
+        g[2][0]
+        g[2][2].length
+
+
+
+
+    </script>
+</body>
+</html>

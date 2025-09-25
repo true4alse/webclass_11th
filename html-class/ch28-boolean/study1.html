@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boolean</title>
+</head>
+<body>
+    <h1>boolean - 참거짓 데이터</h1>
+    <p>true/false</p>
+    <p>비교를 통하여 참거짓이 계산된다.</p>
+    <p>!는 부정의의미(not)로 사용된다.</p>
+    <script>
+        console.log(10>2)
+        console.log(8>10)
+        console.log(10=="10")
+        console.log(10===10)
+        console.log(10!=2)
+        console.log(20!==10)
+        console.log(10>=20)
+        console.log(5<=5)
+        console.log(!(10>2))
+        console.log(!!(20>30))
+    </script>
+
+    <h1>있으면 true 없으면 false</h1>
+    <p>false로 간주 되는 경우(암기)</p>
+    <ul>
+        <li>숫자데이터인데 값이 0인 경우</li>
+        <li>문자데이터인데 내용이 없는 경우</li>
+        <li>변수를 선언했는데 변수를 초기화하지 않은 경우</li>
+        <li>undefined 값도 false로 간주된다.</li>
+        <li>null 이라는 값도 false로 간주된다.</li>
+    </ul>
+    <script>
+        console.log(0)
+        console.log("")
+        let a // undefined 값도 false로 간주된다.
+        let b = null
+
+        20  // true 간주
+        30-30 // false 간주
+        "안녕" // true 간주
+        let c = "hello" // true 간주
+        c = null // false 간주
+
+        !"안녕하세요" // false간주
+        !0 // true 간주
+        !c // true 간주
+
+    </script>
+</body>
+</html>
