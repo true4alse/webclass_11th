@@ -1,5 +1,11 @@
+:root{
+    --base-size-wide:22px;
+    --base-size-pc:20px;
+    --base-size-tab:18px;
+    --base-size-mobile:14px;
+}
 html{
-    font-size:20px;
+    font-size:var(--base-size-pc);
     font-family: 'Pretendard';
     font-weight: 400;
 }
@@ -9,7 +15,7 @@ body{
 .banner{
     width:1600px;
     height:599px;
-    margin:110px auto;
+    margin:5.5rem auto;
     border-radius: 50px;
     display: flex;
     justify-content: center;
@@ -24,7 +30,7 @@ body{
     text-align: center;
     color:#fff;
     text-transform: uppercase;
-    font-size:50px;
+    font-size:2.5rem;
     line-height: 1;
 }
 .wrap{
@@ -32,15 +38,15 @@ body{
     margin:0 auto;
 }
 .wrap h2{
-    font-size:150px;
+    font-size:7.5rem;
     line-height: 0.9;
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
 }
 .coffee-img1{
-    margin-top: 75px;
-    margin-bottom: 50px;
+    margin-top: 3.5rem;
+    margin-bottom: 2.5rem;
     display: flex;
-    gap:20px;
+    gap:1rem;
     height:434px;
 }
 .coffee-img1 div{
@@ -54,12 +60,90 @@ body{
     border-radius: 20px;
 }
 .wrap h3{
-    font-size:40px;
+    font-size:2rem;
     line-height: 1.4;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 }
 .wrap h3+p{
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 3rem;
+}
+
+@media (max-width:1600px){
+    html{
+        font-size:var(--base-size-tab);
+    }
+    .banner {
+        width: auto;
+        margin: 6rem 2rem;
+    }
+    .wrap {
+        width: auto;
+        margin: 0 2rem;
+    }
+    .wrap h2 {
+        font-size: 80px;
+        line-height: 0.9;
+        margin-bottom: 2.6rem;
+    }
+    .coffee-img1 {
+        margin-top: 2.6rem;
+    }
+
+    .wrap h3 {
+       margin-bottom: 1rem;
+    }
+    .coffee-img1 {
+        margin-bottom: 2rem;
+    }
+    .wrap h3+p {
+        margin-bottom: 2rem;
+    }
+    .coffee-img1 {
+        height: auto;
+    }
+    .coffee-img1>div{
+        aspect-ratio: 1/1;
+    }
+    body {
+        background: url("../img/curvebg.svg") no-repeat -16% 0% / cover;
+    }
+        
+}
+
+@media (max-width:768px){
+    html{
+        font-size: var(--base-size-mobile);
+    }
+    .banner {
+        width: auto;
+        margin: 6rem 1rem;
+    }
+    .wrap {
+        width: auto;
+        margin: 0 1rem;
+    }
+    .coffee-img1 {
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .coffee-img1>div {
+        aspect-ratio: 1/1;
+        flex: initial;
+        width: calc((100% - 1rem)/2);
+        height: 150px;
+    }
+    .coffee-img1>div:nth-of-type(3){
+        width:100%;
+    }
+
+}
+@media (max-width:320px){
+    .wrap h2 {
+        font-size: 50px;
+        line-height: 0.9;
+        margin-bottom: 2.6rem;
+    }
 }

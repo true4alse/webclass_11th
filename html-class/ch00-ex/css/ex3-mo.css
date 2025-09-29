@@ -32,9 +32,9 @@
     }
 }
 @media (max-width:300px){
-    .wrap h2 {
-        font-size: 40px;
-        line-height: 0.9;
+.wrap h2 {
+    font-size: 40px;
+    line-height: 0.9;
         text-align: center;
         padding-top: 10rem;
         background: url(../img/deco.svg) no-repeat 50% -99%;

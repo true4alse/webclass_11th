@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체 - obejct</title>
+</head>
+<body>
+    <h1>객체 - object</h1>
+    <p>자바스크립트에서 사물을 나타낼 때 사용하는 표현</p>
+    <p>객체는 ,(콤마)를 사용하여 프로퍼티를 입력할 수 있다</p>
+    <p>그리고 각각의 프로퍼티는 :(콜론)을 사용하여 key:value형태로 구성되어 있다</p>
+    <p>여기서 key값을 사용하여 저장된 value값을 가져올 수 있다. key값은 객체안에 속해있는 변수처럼 활용된다</p>
+
+    <script>
+        let person1 = ["정현진",50,false]
+        person1[0] // "정현진"
+        person1[1] // 50
+        person1[2] // false
+
+        let person2 = {name:"정현진",age:50,gender:false}
+        person2["name"] // "정현진"
+        // console.log(person2["name"])
+        person2["age"]
+        console.log(person2["age"])
+        console.log(person2["gender"]?"여자":"남자")
+        ///////////////////////////////////////////////
+        person2.name // "정현진"
+        person2.age // 50
+        person2.gender // false 
+
+        person2.name.length  // 3
+        person2.name[2] // "진"
+        
+
+    </script>
+    <h2>객체에서의 key는 객체 안에서 사용되는 변수이다.</h2>
+    <script>
+        let player1 = {name:"정현진",age:50}
+        let player2 = {name:"박진솔",age:27}
+        console.log(name) // 바깥쪽에 만들어진 name이라는 변수를 찾는 표현이고 객체 안에 만들어진 name을 불러오려면 객체명을 앞에 적어야 한다. player1.name 과 같이
+        
+    </script>
+</body>
+</html>
