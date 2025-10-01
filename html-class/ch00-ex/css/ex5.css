@@ -1,5 +1,11 @@
+:root{
+    --base-size-wide:22px;
+    --base-size-pc:20px;
+    --base-size-tab:18px;
+    --base-size-mobile:14px;
+}
 html{
-    font-size:20px;
+    font-size:var(--base-size-pc);
     /* 1rem=20px */
     font-family: 'Pretendard';
     font-weight: 400;
@@ -79,4 +85,48 @@ html{
     -webkit-line-clamp: 2;         /* 보여줄 최대 줄 수 */
     overflow: hidden;              /* 넘치는 내용 숨기기 */
     text-overflow: ellipsis;       /* 말줄임 표기(보조) */
+}
+@media (max-width:1600px){
+    html{
+        font-size: var(--base-size-tab);
+    }
+    .common-frame {
+        width: auto;
+        margin: 0 2rem;
+    }
+    .banner h2 {
+        width: auto;
+        font-size: 80px;
+        line-height: 90%;
+        text-transform: uppercase;
+        color: #fff;
+        margin: 0 2rem;
+    }
+    .banner {
+        height: 600px;
+    }
+}
+@media (max-width:768px){
+    html{
+        font-size:var(--base-size-mobile);
+    }
+    .common-frame {
+        width: auto;
+        margin: 0 1rem;
+    }
+    .banner {
+        height: 500px;
+        align-items: center;
+        text-align: center;
+    }
+    .banner h2 {
+        font-size: 50px;
+        margin: 0 1rem;
+    }
+    .list-products {
+        display: flex;
+        gap: 2rem;
+        flex-direction: column;
+    }
+
 }

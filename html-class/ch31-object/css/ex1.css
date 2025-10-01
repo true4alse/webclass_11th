@@ -49,11 +49,12 @@ html{
     transform: scale(1.1);
 }
 
-.profile{
+.profile {
     display: flex;
     flex-wrap: wrap;
-    gap:.5rem 0;
+    gap: .5rem 0;
     margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 .profile>*{
     width:50%;
@@ -65,11 +66,16 @@ html{
 .classmates>li>h4{
     margin-bottom: 1rem;
 }
-.hobby{
+.hobby {
     display: flex;
     flex-direction: column;
     gap: .5rem;
+    margin-top: 1rem;
 }
+.inner-frame{
+    padding: 1rem 1rem 2rem;
+}
+
 
 @media (max-width:1440px){
     html{

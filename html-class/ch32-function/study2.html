@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수의 리턴</title>
+</head>
+<body>
+    <h1>함수 안에서  return 표현</h1>
+    <p>함수에서 return이라는 키워드를 만나면 그 즉시 함수는 종료되며, return키워드 오른쪽의 값을 함수가 사용되었던 자리에 남긴다.</p>
+    <script>
+        function a(){
+            return "좋은아침"
+            document.write("<h1>안녕하세요</h1>")
+        }
+        let b = a()
+        // alert(b)
+
+        function c(){
+            document.write("<p>c함수가 실행되었습니다.</p>")
+            return 1
+        }
+        function d(){
+            document.write("<p>d함수가 실행되었습니다.</p>")
+            return 4
+        }
+        // alert(c()+d())
+        function e(n1,n2){
+            return n1+n2
+        }
+        console.log(e(e(1,2),4))
+
+        function f(word){
+            document.write("<p>나는 "+word+"이 될거야.</p>")
+            return word
+        }
+        console.log(f("슈퍼맨")?"그래그렇게해라":"안돼")
+
+        function g(person){
+            document.write(`${person[0]}씨의 직업은 ${person[1]}이고 ${person[2]}세시군요.`)
+            return person
+        }
+        console.log(g(["정현진","강사",44])[1].length)
+
+        function h(person){
+            document.write(`${person[0]}씨의 직업은 ${person[1]}이고 ${person[2]}세시군요.`)
+            return {age:person[2],name:person[0],job:person[1]}
+        }
+        let person1 = h(["박진솔","학생",27])
+        console.log(person1.name)
+
+        function getAver(arr){
+            // 평균값을 계산해서 리턴하는 함수
+            // 들어오는 데이터가 배열이라고 가정
+            return ((arr[0]+arr[1]+arr[2])/3).toFixed(3)
+        }
+        // alert(getAver([80,90,77]))
+
+        function getAver2(arr,sosu){
+            let sum = 0
+            for(let i=0 ; i<arr.length ; i++){
+                sum += arr[i]
+            }
+            return (sum / arr.length).toFixed(sosu)
+        }
+        alert(getAver2([10,3,4,5,1,2,3,5],1))
+
+       
+    </script>
+</body>
+</html>

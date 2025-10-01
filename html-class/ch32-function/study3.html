@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>값의 형태로 정의하는 함수</title>
+</head>
+<body>
+    <script>
+        // a()
+        function a(){
+            alert("aaa")
+        }
+        
+        let b = function(){
+            alert("bbb")
+        }
+        // b()
+
+        let c = ()=>{
+            alert("ccc")
+        }
+        // c()
+
+        function d(n1){
+            alert(n1)
+        }
+        // d("dd")
+        
+        let e = function(n1){
+            alert(n1)
+        }
+        // e("ee")
+
+        let f = n1 =>{
+            alert(n1)
+        }
+        // f("ff")
+
+        let g = (a,b)=>{
+            alert(a+b)
+        }
+        g(1,1)
+
+    </script>
+
+    <h1>콜백함수</h1>
+    <p>a라는 함수를 불렀을 때 자동으로 실행되는 b라는 함수. 여기서 b함수가 a함수의 콜백함수가 된다.</p>
+    <script>
+        let ccc = function(){}
+        // ccc()
+
+        function aa(bb){
+            // bb = function(){}
+            bb()
+        }
+        aa(function(){
+            alert("bb")
+        })
+
+        let cc = dd =>{
+            dd()
+        }
+        cc(()=>{
+            alert("dd")
+        })
+    </script>
+</body>
+</html>

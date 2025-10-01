@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체 메서드 표현</title>
+</head>
+<body>
+    <h1>객체</h1>
+    <p>자바스크립트에서 사물(object) 표현</p>
+
+    <script>
+        let ac = {
+            bodycolor : "화이트",
+            width : 60,
+            height: 200,
+            wegiht: "80kg",
+            powerOn:function(){
+                alert("에어컨의 전원이 켜졌습니다.")
+                return true
+            },
+            powerOff:()=>{
+                alert("에어컨의 전원이 꺼졌습니다.")
+                return false
+            }
+        }
+        ac.bodycolor
+        ac.powerOn()
+        ac.powerOff()
+    </script>
+</body>
+</html>
