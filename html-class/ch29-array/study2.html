@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열에 쓰이는 함수</title>
+</head>
+<body>
+    <h1>forEach()</h1>
+    <p>배열의 각 원소에 대해서 콜백 함수를 실행하는 함수.
+    새로운 배열을 리턴하지 않고 단순하게 반복만 함</p>
+    <p>배열.forEach(function(el,id,array){})</p>
+    <p>배열의 각 원소에 대해서 특정 동작을 실행한다.</p>
+    <p>매개변수 el은 앞에서 선택한 배열의 각 원소를 뜻함</p>
+    <p>매개변수 id는 앞에서 선택한 배열의 각 원소의 순번을 뜻함</p>
+    <p>매개변수 array 앞에서 선택한 배열 자체를 뜻함</p>
+    <p>원본 배열의 값을 변경하지 않는다.</p>
+    <script>
+        let numbers = [1,2,3,4]
+        numbers.forEach(function(num){
+            document.write(num*2)
+        })
+        console.log(numbers)
+
+        let fruits = ["사과","포도","바나나","수박","멜론"]
+        fruits.forEach(fruit=>{
+            document.write(`<p>${fruit}</p>`)
+        })
+
+        fruits.forEach((fruit,idx)=>{
+            // 각 원소에게 반복될 동작
+            document.write(`<p>내가 좋아하는 ${idx+1}번째 과일은 ${fruit}입니다.</p>`)
+        })
+
+        let classmates = ["유승진","이지하","임은경","이혜림","박진솔"]
+        classmates.forEach(function(student,index,array){
+            document.write(`<p>${array[index]}</p>`)
+            document.write(`<p>${student}</p>`)
+        })
+
+    </script>
+
+    <h1>map()</h1>
+    <p>배열을 변형한 후 새로운 배열로 리턴할 때 사용하는 함수</p>
+    <script>
+        let nums = [1,2,3,4]
+        let doubled = nums.map(function(a,b,c){
+            return a*2
+        })
+        console.log(doubled)
+        let x3 = nums.map(a=>a*3)
+        console.log(x3)
+        let x4 = nums.map(a=>{return a*4})
+        console.log(x4)
+    </script>
+
+</body>
+</html>

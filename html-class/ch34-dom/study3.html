@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom의 메서드와 프로퍼티</title>
+    <style>
+        .para.on{
+            background-color: red;
+            color:#fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>태그의 속성 편집하기</h1>
+    <p>태그가 갖고있는 속성 값을 설정하거나 가져올 수 있다.</p>
+    <figure>
+        <img class="img1" src="./img/정현진.png" alt="정현진">
+        <figcaption class="cap1">정현진</figcaption>
+    </figure>
+    <script>
+        let img1 = document.querySelector(".img1")
+        let originalSrc = img1.getAttribute("src")
+        console.log(originalSrc)
+        img1.setAttribute("src","./img/구연서.png")
+        img1.setAttribute("alt","구연서")
+
+        let cap1 = document.querySelector(".cap1")
+        console.log(cap1.textContent)
+        cap1.innerText = "<i>구연서</i>"
+        cap1.innerHTML = "<i>구연서</i>"
+    </script>
+
+    <h1>태그의 클래스 제어</h1>
+    <p>선택된 태그의 클래스를 추가하거나 삭제할 수 있다.</p>
+    <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, numquam eum! Magnam dicta nobis placeat. Provident omnis optio deserunt tenetur. Sit ut consectetur debitis minima architecto. Eius ducimus expedita perspiciatis.</p>
+    <script>
+        let para = document.querySelector(".para")
+        para.classList.add("on")
+        para.classList.remove("on")
+    </script>
+
+    <h1>태그의 포함관계를 사용하여 태그 선택하기</h1>
+    <ul class="list">
+        <li>1</li>
+        <li class="me">2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+    <script>
+        let ultag = document.querySelector(".list")
+        let litags = ultag.children // [{},{},{},{}]
+        litags[3].style.color = "red"
+        let me = document.querySelector(".me")
+        me.parentElement.style.border = "2px solid green"
+        me.nextElementSibling.style.color = "blue"
+        me.previousElementSibling.style.color = "pink"
+        me.parentElement.parentElement.children[1].style.backgroundColor = "pink"
+        me.parentElement.parentElement.children[0].textContent[0]
+        console.log(me.parentElement.parentElement.children[0].textContent[0])
+    </script>
+
+</body>
+</html>

@@ -22,11 +22,29 @@
             powerOff:()=>{
                 alert("에어컨의 전원이 꺼졌습니다.")
                 return false
+            },
+            temperature:25,
+            showTemperature:function(){
+                alert("현재 온도는 "+this.temperature+"도 입니다.")
+            },
+            temperatureUp:function(){
+                alert("온도를 1도 올리겠습니다.")
+                this.temperature+=1
+            },
+            temperatureDown:function(){
+                alert("온도를 1도 내리겠습니다.")
+                this.temperature-=1
             }
         }
-        ac.bodycolor
-        ac.powerOn()
-        ac.powerOff()
+        // ac.bodycolor
+        // ac.powerOn()
+        // ac.powerOff()
+        // ac.showTemperature()
+        ac.showTemperature()
+        ac.temperatureUp()
+        ac.temperatureUp()
+        ac.showTemperature()
+        
     </script>
 </body>
 </html>

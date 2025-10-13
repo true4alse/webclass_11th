@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom</title>
+    <style>
+        h1{color:blue;}
+    </style>
+</head>
+<body>
+    <h1>제목1</h1>
+    <p class="a">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus non alias, consequuntur maiores eos dicta qui culpa repudiandae possimus excepturi velit voluptatem ab ut beatae doloribus perferendis adipisci accusamus sed?</p>
+    <p class="a">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus non alias, consequuntur maiores eos dicta qui culpa repudiandae possimus excepturi velit voluptatem ab ut beatae doloribus perferendis adipisci accusamus sed?</p>
+    <p class="a">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus non alias, consequuntur maiores eos dicta qui culpa repudiandae possimus excepturi velit voluptatem ab ut beatae doloribus perferendis adipisci accusamus sed?</p>
+    <p class="a">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus non alias, consequuntur maiores eos dicta qui culpa repudiandae possimus excepturi velit voluptatem ab ut beatae doloribus perferendis adipisci accusamus sed?</p>
+    <script>
+        let h1tag = document.querySelector("h1")
+        // {}
+
+        h1tag.style.color = "red"
+        h1tag.style.fontSize = "80px"
+        h1tag.style.textDecoration = "underline"
+
+        let ptag = document.querySelector(".a")
+        // {}
+        ptag.style.backgroundColor = "#ccc"
+
+        let ptags = document.querySelectorAll(".a")
+        // [{},{},{},{}]
+        ptags[0].style.color = "red"
+        ptags[1].style.color = "red"
+        ptags[2].style.color = "red"
+        ptags[3].style.color = "red"
+
+        for(let i=0 ; i<ptags.length ; i++){
+            ptags[i].style.color = "red"
+        }
+
+        ptags.forEach(function(tag){
+            tag.style.color = "red"
+        })
+
+        ptags.forEach(tag=>{
+            tag.style.color = "red"
+        })
+
+
+
+    </script>
+</body>
+</html>
