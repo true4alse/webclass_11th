@@ -1,0 +1,27 @@
+.button-type{
+    border: 1px solid #000;
+    background-color: #fff;
+    display: inline-block;
+    padding:6px 20px;
+    cursor: pointer;
+}
+.button-type:hover{
+    background-color: lime;
+    color:#fff;
+}
+ul{list-style: none;padding:0;}
+.font-controler{
+    position: fixed;
+    right:0;
+    top:0;
+}
+.font-controler ul{
+    display: flex;
+    gap:20px;
+}
+.font-controler .button-type{
+    border-radius: 50px;
+}
+html{
+    font-size:16px;
+}

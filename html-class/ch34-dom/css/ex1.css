@@ -1,0 +1,27 @@
+.container{
+    width:900px;
+    margin:0 auto;
+}
+.popup{
+    position: absolute;
+    left:200px;
+    top:200px;
+    width:300px;
+    border:1px solid #000;
+    padding:20px;
+    background-color: #fff;
+    box-shadow: 0 0 15px gray;
+}
+.popup-controler{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.popup-controler span{
+    cursor: pointer;
+    padding:0.4rem 1rem;
+    border:1px solid #000;
+}
+.popup.hide{
+    display: none;
+}
