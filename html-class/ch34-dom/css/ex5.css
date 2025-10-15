@@ -1,0 +1,31 @@
+*{margin:0;padding:0;}
+.tab-menu{
+    width:800px;
+    margin:0 auto;
+}
+.tabs{
+    display: flex;
+    gap:1rem;
+    padding:.5rem 0;
+    justify-content: center;
+}
+.tabs span{
+    box-shadow: 0 0 10px #eee;
+    padding:.25rem 1rem;
+    cursor: pointer;
+    border-radius: 30px;
+}
+.tabs span.on{
+    background-color: #000;
+    color:#fff;
+}
+.tabs span:hover{
+    background-color: #000;
+    color:#fff;
+}
+.tab-descs section{
+    display: none;
+}
+.tab-descs section.on{
+    display: block;
+}
