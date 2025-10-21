@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>생성자 함수</title>
+</head>
+<body>
+    <h1>생성자 함수</h1>
+    <p>생성자 함수란? 객체를 생성하는 함수를 뜻한다.</p>
+    <script>
+        function Person(option){
+            this.name = option.userName
+            this.age = option.userAge
+            this.sayHello = function(){
+                alert("안녕하세요 "+this.name+"입니다.")
+            }
+        }
+        let person1 = new Person({userName:"정현진",userAge:44})
+        let person2 = new Person({userName:"박진솔",userAge:27})
+        let person3 = new Person({userName:"유승진",userAge:27})
+        let person4 = new Person({userName:"구연서",userAge:27})
+        person1.sayHello()
+        person2.sayHello()
+        person3.sayHello()
+        person4.sayHello()
+
+        
+    </script>
+</body>
+</html>

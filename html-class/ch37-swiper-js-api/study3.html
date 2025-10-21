@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>swiper js 속성 사용해보기</title>
+    <link rel="stylesheet" href="./css/study3.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <div class="swiper station">
+        <ul class="swiper-wrapper train">
+            <li class="swiper-slide"><img src="./img/구연서.png" alt="1"></li>
+            <li class="swiper-slide"><img src="./img/김민영.png" alt="2"></li>
+            <li class="swiper-slide"><img src="./img/김서진.png" alt="3"></li>
+            <li class="swiper-slide"><img src="./img/김혜빈.png" alt="4"></li>
+            <li class="swiper-slide"><img src="./img/박진솔.png" alt="5"></li>
+            <li class="swiper-slide"><img src="./img/박채은.png" alt="6"></li>
+            <li class="swiper-slide"><img src="./img/엄혜경.png" alt="7"></li>
+            <li class="swiper-slide"><img src="./img/유승진.png" alt="8"></li>
+            <li class="swiper-slide"><img src="./img/이지하.png" alt="9"></li>
+            <li class="swiper-slide"><img src="./img/이혜림.png" alt="10"></li>
+            <li class="swiper-slide"><img src="./img/임은경.png" alt="11"></li>
+            <li class="swiper-slide"><img src="./img/정현진.png" alt="12"></li>
+        </ul>
+        <!-- <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div> -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <span id="btn-prev">이전</span>
+    <span id="btn-next">다음</span>
+    <script>
+        const station1 = new Swiper(".station",{
+            speed:3000,
+            autoplay: {
+                delay: 0,
+                disableOnInteraction: false,
+            },
+            loop: true,
+            slidesPerView: 1.2,
+            spaceBetween: 14,
+            // direction: "vertical",
+            navigation: {
+                nextEl: "#btn-next",
+                prevEl: "#btn-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                // dynamicBullets: true,
+                // type: "progressbar",
+                // type: "fraction",
+                clickable: true,
+                renderBullet: function (index, className) {
+                return '<bullet class="' + className + '">' + (index + 1) + "</bullet>";
+                },
+            },
+            breakpoints: {
+                768: {
+                // 화면 너비가 768픽셀 이상인 경우
+                slidesPerView: 2.2,
+                spaceBetween: 18,
+                },
+                1024: {
+                slidesPerView: 3.2,
+                spaceBetween: 20,
+                },
+                1440: {
+                slidesPerView: 4.2,
+                spaceBetween: 20,
+                },
+            },
+        })
+    </script>
+    
+</body>
+</html>
