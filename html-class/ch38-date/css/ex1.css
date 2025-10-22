@@ -9,9 +9,11 @@
 }
 .clock.day{
     background: url("../img/day.png") no-repeat 50% 50% / cover;
+    color:#fff;
 }
 .clock.night{
     background: url("../img/night.png") no-repeat 50% 50% / cover;
+    color:#fff;
 }
 .mode{
     position: absolute;
@@ -20,6 +22,8 @@
     top:2rem;
     display: flex;
     gap:1rem;
+    color:#000;
+    
 }
 .mode li{
     background-color: #fff;
