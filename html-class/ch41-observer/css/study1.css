@@ -1,10 +1,27 @@
 .ltr{
-    border:1px solid red;
     transform:translateX(-20px);
     opacity: 0;
     transition:all 0.5s ease 0s;
 }
 .ltr.on{
     transform: translateX(0px);
+    opacity: 1;
+}
+.rtl{
+    transform:translateX(20px);
+    opacity: 0;
+    transition:all 0.5s ease 0s;
+}
+.rtl.on{
+    transform: translateX(0px);
+    opacity: 1;
+}
+.sutd{
+    transform: scale(1.2);
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+}
+.sutd.on{
+    transform: scale(1);
     opacity: 1;
 }
