@@ -1,0 +1,10 @@
+.ltr{
+    border:1px solid red;
+    transform:translateX(-20px);
+    opacity: 0;
+    transition:all 0.5s ease 0s;
+}
+.ltr.on{
+    transform: translateX(0px);
+    opacity: 1;
+}
