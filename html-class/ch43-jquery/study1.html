@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제이쿼리</title>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <h1>제이쿼리</h1>
+    <p>자바스크립트 언어로 만들어진 라이브러리언어</p>
+    <p>자바스크립트 코드를 적게써서 사용하기 위해서 만들어짐</p>
+    <p>반복문이 자동으로 사용됨</p>
+    <p>문서객체에 접근하는 방법이 쉬움</p>
+    <script>
+        document.querySelector("h1").style.color = "red"
+        document.querySelector("h1").style.borderBottom = "1px solid red"
+        $("h1").css("color","blue")
+        $("h1").css("border-bottom","1px solid blue")
+        
+        // document.querySelectorAll("p")[0].style.color="orange"
+        // document.querySelectorAll("p")[1].style.color="orange"
+        // document.querySelectorAll("p")[2].style.color="orange"
+        // document.querySelectorAll("p")[3].style.color="orange"
+        // for(let i=0; i<4 ;i++){
+        //     document.querySelectorAll("p")[i].style.color="pink"
+        // }
+        // document.querySelectorAll("p").forEach(pTag=>pTag.style.color="orange")
+        $("p").css("color","red")
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제이쿼리</title>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/study2.js"></script>
+    <style>
+        .tab-desciption>section{display: none;}
+        .tab-desciption>section.on{display: block;}
+    </style>
+</head>
+<body>
+    <h1>css() 메서드</h1>
+    <p>선택한 태그들에 대하여 스타일을 변경할 때 사용하는 함수</p>
+    <p class="a">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ab cum asperiores est praesentium vero nesciunt tempora doloremque unde maxime. Ut aliquam quaerat nisi ex impedit reiciendis itaque, sit fugiat.</p>
+
+    <h1>html() 메서드</h1>
+    <p>선택된 태그의 내용을 가져오거나 새로운 내용으로 바꿀 때 사용하는 함수</p>
+    <p class="b">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium, nihil. Nulla laudantium explicabo earum ea incidunt voluptatibus quam. Facere in nemo maxime aliquid repellat? Enim voluptatibus ea neque atque nam?</p>
+
+    <h1>attr() 메서드</h1>
+    <p>선택된 태그의 속성값을 가져오거나 변경할 때 사용하는 함수</p>
+    <a href="https://www.naver.com" class="c">네이버로 바로가기</a>
+
+    <h1>클래스 메서드</h1>
+    <p>선택된 태그의 클래스를 추가하거나 삭제할 수 있다.</p>
+    <p class="d">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum vel aperiam iusto. Et reiciendis aut quasi adipisci neque molestiae perspiciatis nihil totam dolorum voluptatem, libero harum aliquid fugit, omnis debitis!</p>
+
+    <h1>포함관계 이용하여 태그 선택</h1>
+    <ul class="lists">
+        <li>list1</li>
+        <li>list2</li>
+        <li class="e">list3</li>
+        <li>list4</li>
+        <li>list5</li>
+    </ul>
+
+    <h1>클릭 이벤트리스너 등록</h1>
+    <div class="frame">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nemo quod commodi consectetur temporibus accusantium qui magnam voluptatum adipisci quibusdam magni labore ducimus quisquam beatae sit, consequatur corrupti molestiae exercitationem?</div>
+    <button class="btn">click!</button>
+
+    <h1>index() 함수</h1>
+    <p>선택한 태그의 부모 기준 자식 순번을 리턴하는 함수</p>
+    <ul class="tabs">
+        <li>tab1</li>
+        <li>tab2</li>
+        <li>tab3</li>
+    </ul>
+    <div class="tab-desciption">
+        <section class="on">Lorem1 ipsum dolor sit amet consectetur adipisicing elit. Nam rem minus odio dolores corporis? Consequatur unde perferendis voluptatibus nostrum aliquid enim exercitationem sapiente officiis commodi itaque aspernatur error, voluptatem quas?</section>
+        <section>Lorem2 ipsum dolor, sit amet consectetur adipisicing elit. Totam sit excepturi reprehenderit doloribus? Eligendi eaque alias ullam, non veniam distinctio ratione cumque reprehenderit nisi incidunt ad perspiciatis laborum repudiandae aliquam!</section>
+        <section>Lorem3 ipsum, dolor sit amet consectetur adipisicing elit. Nisi voluptate, minus sint, a debitis vero hic numquam enim, inventore distinctio facere? Distinctio beatae dicta veritatis. Ad consequatur est veritatis fugit.</section>
+    </div>
+</body>
+</html>
